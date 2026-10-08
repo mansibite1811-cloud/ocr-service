@@ -1,0 +1,24 @@
+# Python byte code & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Environment secrets
+.env
+.env.local
+
+# IDE & OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Model download cache (local only)
+.paddleocr/

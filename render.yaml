@@ -1,0 +1,15 @@
+# ==============================================================================
+# Render Blueprint Configuration — Standalone OCR Web Service
+# ==============================================================================
+services:
+  - type: web
+    name: ocr-service
+    env: docker
+    dockerfilePath: ./Dockerfile
+    region: oregon # or frankfurt, singapore, etc.
+    plan: free # or starter
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: OCR_API_KEY
+        sync: false # Set in Render Dashboard secrets if security key is desired
